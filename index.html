@@ -23,7 +23,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="resources/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script>window.staticurl=function(){var t=window.location.pathname;return t.endsWith("index.html")&&(t=t.slice(0,-9)),folderPath.endsWith("/")||(folderPath+="/"),t=folderPath}();</script>
+    <script>window.staticurl=function(){var t=window.location.pathname;return t.endsWith("index.html")&&(t=t.slice(0,-9)),t.endsWith("/")||(t+="/")}();</script>
     <script src="resources/js/base-error-reporting.js"></script>
     <script src="resources/js/surf-error-reporting.js"></script>
     <script src="resources/js/assert.js"></script>
