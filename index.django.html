@@ -1,8 +1,8 @@
+{% load static %}
+
 <!-- Copyright (C) Microsoft Corporation. All rights reserved.
  Use of this source code is governed by a BSD-style license that can be
  found in the LICENSE file. -->
-
-{% load static %}
 
 <!DOCTYPE html>
 <!-- saved from url=edge://surf/ -->
@@ -25,6 +25,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{% static 'surf/resources/icons/ms-icon-144x144.png' %}">
     <meta name="theme-color" content="#ffffff">
+    {% include 'staticurl.html' %}
+    <script>window.staticurl+="surf/"</script>
     <script src="{% static 'surf/resources/js/base-error-reporting.js' %}"></script>
     <script src="{% static 'surf/resources/js/surf-error-reporting.js' %}"></script>
     <script src="{% static 'surf/resources/js/assert.js' %}"></script>
